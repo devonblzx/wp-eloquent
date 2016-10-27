@@ -2,6 +2,8 @@
 
 This is a library package to use Laravel's [Eloquent ORM](http://laravel.com/docs/5.0/eloquent) with WordPress.
 
+This is an updated fork from [tareq1988/wp-eloquent](https://github.com/tareq1988/wp-eloquent) that I intend to maintain and enhance.
+
 
 ## Package Installation
 
@@ -10,7 +12,7 @@ To install this package, edit your `composer.json` file:
 ```js
 {
     "require": {
-        "tareq1988/wp-eloquent": "dev-master"
+        "devonblzx/wp-eloquent": "dev-master"
     }
 }
 ```
