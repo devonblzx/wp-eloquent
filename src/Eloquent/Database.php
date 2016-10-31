@@ -254,12 +254,13 @@ class Database implements ConnectionInterface {
      * Execute a Closure within a transaction.
      *
      * @param  \Closure $callback
+     * @param int $attempts
      *
      * @return mixed
      *
      * @throws \Exception
      */
-    public function transaction( \Closure $callback ) {
+    public function transaction( \Closure $callback, $attempts = 1 ) {
         // TODO: Implement transaction() method.
     }
 
