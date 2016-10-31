@@ -1,6 +1,10 @@
+# Version 5.3 should not be used yet
+
+The goal is to have this stable with the newest Laravel Eloquent release (illuminate/database:5.3) shortly.
+
 # Eloquent Wrapper for WordPress
 
-This is a library package to use Laravel's [Eloquent ORM](http://laravel.com/docs/5.0/eloquent) with WordPress.
+This is a library package to use Laravel's [Eloquent ORM](http://laravel.com/docs/5.3/eloquent) with WordPress.
 
 This is an updated fork from [tareq1988/wp-eloquent](https://github.com/tareq1988/wp-eloquent) that I intend to maintain and enhance.
 
@@ -56,8 +60,8 @@ Here `users` is the table name **without prefix**. The prefix will be applied au
 
 ### Other Examples
 
- - [Queries](http://laravel.com/docs/5.0/queries)
- - [Eloquent ORM](http://laravel.com/docs/5.0/eloquent)
+ - [Queries](http://laravel.com/docs/5.3/queries)
+ - [Eloquent ORM](http://laravel.com/docs/5.3/eloquent)
 
 ## Writing a Model
 
@@ -105,7 +109,7 @@ var_dump(Post::type('page')->status('publish')->get()->toArray()); // get pages 
 
 
 ## Minimum Requirement
- - PHP 5.3.0
+ - PHP 5.5.9
  - WordPress 3.6+
 
 ## Author
