@@ -122,8 +122,8 @@ class Database implements ConnectionInterface {
                 return "null";
             } elseif ( is_scalar($replace)) {
                 return $replace;
-            } elseif ( $replace = @strval($replace) ) {
-                return "'" . esc_sql($replace) . "'";
+            } elseif ( $string = @strval($replace) ) {
+                return "'" . esc_sql($string) . "'";
             }
 
             return $replace;
