@@ -117,9 +117,13 @@ class Database implements ConnectionInterface {
 
         $bindings = array_map( function( $replace ) {
             if ( is_string( $replace ) ) {
-                $replace = "'" . esc_sql( $replace ) . "'";
+                return "'" . esc_sql( $replace ) . "'";
             } elseif ( $replace === null ) {
-                $replace = "null";
+                return "null";
+            } elseif ( is_scalar($replace)) {
+                return $replace;
+            } elseif ( $replace = @strval($replace) ) {
+                return "'" . esc_sql($replace) . "'";
             }
 
             return $replace;
